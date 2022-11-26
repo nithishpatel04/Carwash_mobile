@@ -157,7 +157,7 @@ while True :
         add = input("Enter address: ")
         pin = input("Enter Pincode: ")
         dos = input("Enter Available Dosage: ")
-        query = f"insert into vaccine_locations(center_name,state,address,pincode,slots_available) values('{hname}','{hstate}','{hadd}','{hpin}',{hdos})"
+        query = f"insert into locations(center_name,state,address,pincode,slots_available) values('{name}','{state}','{add}','{pin}',{dos})"
         
         cursor.execute(query)
         print("\nNew Center Added Successfully....\n")
